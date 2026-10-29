@@ -124,7 +124,7 @@
 ### 任务派发
 - 悟空通过 `delegate_task` 并行派发子代理（goal+context+toolsets 控制行为）
 - 长时隔离任务用独立 Profile：`hermes --profile <name> chat -q '...'`
-- Profile 路径：悟空 `~/.hermes/profiles/orion/`（主SOUL）、Alan `~/.hermes/profiles/alan/`、Mira `~/.hermes/profiles/mira/`、Turing `~/.hermes/profiles/turing/`、羲和 `~/.hermes/profiles/羲和/`、Ima `~/.hermes/profiles/ima/`、Risk `~/.hermes/profiles/risk/`
+- Profile 隔离：每个角色独立 `profiles/<code>/SOUL.md`（wukong / alan / mira / turing / xihe / ima / risk），人格互不污染
 
 ### 派发铁律
 1. 悟空不亲自执行复杂任务（超2步必须拆解派发）
